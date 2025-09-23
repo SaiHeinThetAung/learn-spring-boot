@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Custom Login</title>
+</head>
+<body>
+<h2>Login Page</h2>
+
+<!-- Normal username/password -->
+<form method="post" action="/login">
+  <label>Username: <input type="text" name="username"/></label>
+  <label>Password: <input type="password" name="password"/></label>
+  <button type="submit">Login</button>
+</form>
+
+<hr/>
+
+<!-- OAuth2 Provider Links -->
+<a href="/oauth2/authorization/github">Login with GitHub</a><br>
+<a href="/oauth2/authorization/google">Login with Google</a><br>
+</body>
+</html>
